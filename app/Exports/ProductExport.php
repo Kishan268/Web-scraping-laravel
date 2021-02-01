@@ -21,6 +21,8 @@ class ProductExport implements FromCollection, WithHeadings, ShouldAutoSize
     public function headings(): array
 	{
         return [
+            'category_id',
+            'brand_id',
             'Category',
             'Brand',
             'Name',
@@ -28,6 +30,14 @@ class ProductExport implements FromCollection, WithHeadings, ShouldAutoSize
             'Currency',
             'Unit Price',
             'Purchase Price',
+            'Product Description',
+            'unit',
+            'current_stock',
+            'meta_title',
+            'meta_description',
+            'slug',
+            'video_provider',
+            'video_link',
         ];
 	}
 }
